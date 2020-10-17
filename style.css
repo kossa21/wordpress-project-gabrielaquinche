@@ -27,6 +27,8 @@ body {
     box-sizing: border-box;
 }
 
+/* Header */
+
 header {
     width: 300px;
 }
@@ -42,6 +44,10 @@ ul {
 
 li {
     margin-top: 10px;
+}
+
+li.active {
+    color: var(--gray-text);
 }
 
 .margin-top-40 {
@@ -61,10 +67,20 @@ ul {
     list-style: none;
 }
 
+/* Main */
+
 main {
     width: calc(100vw - 300px);
-    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+main img {
+    max-width: 100%;
+}
+
+/* Footer */
 
 footer {
     display: flex;
@@ -73,4 +89,23 @@ footer {
     
     height: 50px;
     padding-right: 30px;
+}
+
+/*----------- MEDIA QUERIES -----------*/
+
+/* Tablet devices */
+@media screen and (max-width: 991px) {
+
+}
+
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    main {
+        width: 100%;
+    }
 }
