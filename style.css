@@ -50,6 +50,7 @@ li.active {
     color: var(--gray-text);
 }
 
+
 .margin-top-40 {
     margin-top: 40px;
 }
@@ -76,8 +77,32 @@ main {
     align-items: center;
 }
 
+.emailContact{
+    color : orange;
+    text-decoration: underline;
+}
+
+
+
 main img {
     max-width: 100%;
+}
+
+/*Contact*/
+
+article{
+    width: calc(100vw - 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+/*About*/
+
+.aboutImg{
+
 }
 
 /* Footer */
