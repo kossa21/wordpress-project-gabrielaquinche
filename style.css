@@ -16,8 +16,11 @@ body {
     margin: 0;
     height: 100vh;
 
-    background-color: #ffeddb;
     font-family: 'Sero Pro', 'Arial';
+}
+
+.body-wrapper-home {
+    background-color: #ffeddb;
 }
 
 .container {
@@ -25,6 +28,11 @@ body {
     height: calc(100vh - 50px);
     padding: 50px 50px 0 50px;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* Header */
@@ -44,6 +52,16 @@ ul {
 
 li {
     margin-top: 10px;
+}
+
+.submenu {
+    margin-left: 20px;
+    display: none;
+    transition: display 1s;
+}
+
+.submenu.show {
+    display: block;
 }
 
 li.active {
@@ -102,7 +120,13 @@ article{
 /*About*/
 
 .aboutImg{
+    
+}
 
+.controller-container {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
 }
 
 /* Footer */
@@ -120,7 +144,13 @@ footer {
 
 /* Tablet devices */
 @media screen and (max-width: 991px) {
+    li {
+        margin-top: 5px;
+    }
 
+    .margin-top-40 {
+        margin-top: 25px;
+    }
 }
 
 /* Mobile devices */
@@ -130,7 +160,7 @@ footer {
         height: auto;
     }
 
-    main {
+        main {
         width: 100%;
     }
 }
