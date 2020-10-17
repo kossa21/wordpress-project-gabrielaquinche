@@ -1,0 +1,111 @@
+/*-----------  FONT -------------*/
+@font-face {
+    font-family: 'Sero Pro';
+    src: 'SeroPro.ttf';
+}
+
+/*----------- VARIABLES -----------*/
+
+:root {
+    --gray-text: #a8a4a4;
+}
+
+/*----------- STYLES -----------*/
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    background-color: #ffeddb;
+    font-family: 'Sero Pro', 'Arial';
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 50px);
+    padding: 50px 50px 0 50px;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    width: 300px;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin-top: 10px;
+}
+
+li.active {
+    color: var(--gray-text);
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.icons {
+    margin-top: 30px;
+}
+
+.icons i {
+    display: block;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Main */
+
+main {
+    width: calc(100vw - 300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main img {
+    max-width: 100%;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--gray-text);
+    
+    height: 50px;
+    padding-right: 30px;
+}
+
+/*----------- MEDIA QUERIES -----------*/
+
+/* Tablet devices */
+@media screen and (max-width: 991px) {
+
+}
+
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    main {
+        width: 100%;
+    }
+}
