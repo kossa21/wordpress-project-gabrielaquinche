@@ -23,11 +23,38 @@ body {
 .container {
     display: flex;
     height: calc(100vh - 50px);
+    padding: 50px 50px 0 50px;
+    box-sizing: border-box;
 }
 
 header {
     width: 300px;
-    background-color: green;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.icons {
+    margin-top: 30px;
+}
+
+.icons i {
+    display: block;
+    margin-top: 10px;
 }
 
 ul {
@@ -42,6 +69,7 @@ main {
 footer {
     display: flex;
     justify-content: flex-end;
+    color: var(--gray-text);
     
     height: 50px;
     padding-right: 30px;
